@@ -12,6 +12,6 @@ for i in range(t):
     print(score)
     kposition = score.index(kscore)
     print(kposition)
-    srange = (kposition)//(n //10)
+    srange = ((kposition)*(n //10))%10
     print(srange)
     print(f'#{i+1} {grade[srange]}')
